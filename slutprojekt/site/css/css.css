@@ -1,0 +1,44 @@
+body{
+    background-color: white;
+}
+
+@media only screen and (max-width: 415px) and (max-height: 737px){
+    .container {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+    }
+
+    header {
+        grid-column: span 4;
+        grid-row: 1;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        background-color: lightgray;
+    }
+
+    .rub1 {
+        grid-column: 2/3;
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .rub2 {
+        grid-column: 2/3;
+        grid-row: 2;
+        text-align: center;
+    }
+
+    h3 {
+        margin: 0;
+    }
+
+    .logo {
+        grid-row: span 2;
+        position: relative;
+        left: 4vw;
+    }
+}
