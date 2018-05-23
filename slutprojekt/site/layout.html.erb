@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="css/css.css">
     <title>Köp våra hattar snälla</title>
 </head>
-<body background="img/background.jpg">
+<body>
+    <header>
+        <div class="icons" onclick="toggleMenu()">
+            <img class="icon" src="img/menu.png" alt="">
+        </div>
+        <h3 class="rub1">Hattifnattarnas</h3>
+        <h3 class="rub2">Hattiga Hattar</h3>
+        <img class="logo" src="img/logo.png" alt="logo">
+    </header>
     <div class="container">
             <div class="fade-layer"></div>
             <div class="menu">
@@ -14,16 +22,13 @@
                     <img class="icon" src="img/close.png" alt="menu.png">
                 </div>
                 <ul>
+                    <li><a href="index.html">Hem</a></li>
+                    <li><a href="news.html">Nyheter</a></li>
+                    <li><a href="produkter.html">Produkter</a></li>
+                    <li><a href="info.html">Om oss</a></li>
                 </ul>
             </div>
-        <header>
-            <div class="icons" onclick="toggleMenu()">
-                <img class="icon" src="img/menu.png" alt="">
-            </div>
-            <h3 class="rub1">Hattifnattarnas</h3>
-            <h3 class="rub2">Hattiga Hattar</h3>
-            <img class="logo" src="img/logo.png" alt="logo">
-        </header>
+            <%= yield%>
     </div>
     <script src="js/menu.js"></script>
 </body>
